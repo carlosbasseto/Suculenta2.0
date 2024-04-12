@@ -168,72 +168,40 @@ hr{
     cursor: pointer;
 }
 
-.cor{
-    color: #00BFFF;
-}
-
-.titulo{
+h1{
     text-align: center;
     color: white;
+    font-size: 45px;
 }
 
-section .formulario{
-    padding: 80px 4%;
-    
+.sub-titulo{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 18%;
 }
 
-.formulario{
-    margin-top: 8%;
-}
-
-form{
-    max-width: 500px;
-    margin: 0 auto;
+.card-curiosidades{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
 }
 
-form input, form textarea{
-    width: 100%;
-    background-color: #585656;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    color: #fff;
-    font-size: 18px;
+.container{
+    margin-left: 18%;
+    border-left: 1px solid #00BFFF;
+    padding-left: 10px;
+    margin-top: 3%;
 }
 
-form textarea{
-    resize: none;
-    max-height: 200px;
+.sgv-planta{
+    fill: #00BFFF;
+    width: 25px;
 }
 
-form .btn-enviar{
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input{
-    width: 120px;
-    background-color: #00BFFF;
-    color: black;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-    border-radius: 20px;
-}
-
-button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px #00BFFF;
-    transform: scale(1.05);
-}
-
-input::placeholder {
+.titulo-curiosidade{
+    margin-left: 8px;
     color: white;
 }
 
-textarea::placeholder{
-    color: white;
+.descricao-curiosidade{
+    color: rgb(212, 212, 212);
 }
+
