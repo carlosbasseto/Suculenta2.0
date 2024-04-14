@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background: #121212;
+}
+
+button{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 257%;
+    background: 	#00BFFF;
+    transition: all 0.4s;
+}
+
+body.open .sidebar{
+    width: 240px;
+}
+
+a{
+    color: white;
+}
+
+.sidebar-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    height: 68px;
+    padding: 0 1.25rem 0 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+
+.sidebar-header:hover{
+    border-left: 3px solid #bdbdbd;
+}
+
+.sidebar-burger{
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.sidebar-burger > i, body.open .sidebar-burger > i{
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+}
+
+.sidebar-burger:hover > i, body.open .sidebar-burger:hover > i{
+    color: #bdbdbd;
+}
+
+.sidebar-logo{
+    height: 30px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+body.open .sidebar-logo{
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.sidebar-menu{
+    display: grid;
+}
+
+.sidebar-menu > button{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 55px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 22px;
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+
+.sidebar-menu > button:hover{
+    border-left: 3px solid #f9f9f9;
+}
+
+.sidebar-menu > button.has-border{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+}
+
+.sidebar-menu > button > i{
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+}
+
+.sidebar-menu > button:hover > i, .sidebar-menu > button:hover > span{
+    color: black;
+}
+
+.sidebar-menu > button > span{
+    color: #f9f9f9;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+body.open .sidebar-menu > button > span{
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.svg{
+    width: 30px;
+    fill: rgb(221, 221, 221);
+}
+
+
+.frase-inicio{
+    margin-left: 19%;
+    color: white;
+    font-size: 46px;
+    margin-top: 8%;
+}
+
+
+
+hr{
+    height: 2px;
+    color: white;
+}
+
+.curiosidades{
+    margin-left: 24%;
+    margin-top: 3%;
+    padding: 15px 65px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #00BFFF;
+    border: 2px solid #00BFFF;
+    background-color: #95cfe2;
+    cursor: pointer;
+}
+
+.cor{
+    color: #00BFFF;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+}
+
+section .formulario{
+    padding: 80px 4%;
+    
+}
+
+.formulario{
+    margin-top: 8%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #585656;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #00BFFF;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 20px;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #00BFFF;
+    transform: scale(1.05);
+}
+
+input::placeholder {
+    color: white;
+}
+
+textarea::placeholder{
+    color: white;
+}
+
+.navegacao{
+    display: flex;
+    background-color: #ddd;
+    margin-top: 5%;
+    width: 89%;
+    margin-left: 8%;
+    border: 3px solid #00BFFF;
+}
+
+
+.itens-nav1{
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.itens-nav{
+    margin-left: 13%;
+    font-size: 20px;
+}
+
+.compra-botao{
+    margin-left: 17%;
+    font-size: 20px;
+}
+
+.conteudo-tabela{
+    margin-left: 8%;
+}
+
+.conteudo-tabela1{
+    margin-left: 8%;
+}
+
+.itens-tabela{
+    margin-left: 13%;
+    font-size: 18px;
+}
+
+.itens-tabela-1{
+    margin-left: 10%;
+    font-size: 18px;
+    width: 150px;
+}
+
+.conteudo-tabela1{
+    display: flex;
+    background-color: #ddd;
+    width: 89%;
+   
+    padding: 12px;
+}
+
+.img-tabela{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    margin-left: 13%;
+}
+
+.itens-tabela-drop{
+    font-size: 18px;
+    height: 35px;
+    cursor: pointer;
+    width: 150px;
+    border: 3px solid white;
+    background-color: #00BFFF;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 6px 8px;
+    border-radius:15px;
+    color: white;
+}
+
+.compra{
+    font-size: 18px;
+    height: 35px;
+    cursor: pointer;
+    width: 150px;
+    border: 3px solid white;
+    background-color: #00BFFF;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 6px 8px;
+    border-radius:15px;
+    color: white;
+}
+
+.opcoes{
+    cursor: pointer;
+    color: black;
+    background-color: #ffffff;
+    font-size: 18px;
+   
+}
+
+.classe{
+    display: flex;
+    margin-left: 8%;
+}
+
+.valor-planta{
+    font-size: 18px;
+    height: 35px;
+    cursor: pointer;
+    width: 150px;
+    border: 3px solid white;
+    background-color: #00BFFF;
+    margin-left: 2%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 6px 8px;
+    border-radius:15px;
+    color: white;
+}
+
+
